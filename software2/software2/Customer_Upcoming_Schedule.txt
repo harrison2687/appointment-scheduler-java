@@ -1,0 +1,16 @@
+Upcoming Meetings for Each Customer: 
+ 
+John Doe: 
+01-28-2020: Accounts-Onboarding from 10:00AM to 11:45AM EST. 
+02-11-2020: Accounts-Offboarding from 09:00AM to 11:00AM EST. 
+
+ 
+Alfred E Newman: 
+01-30-2020: Miscellaneous from 2:00PM to 4:30PM EST. 
+
+ 
+Ina Prufung: 
+01-30-2020: Presentation from 09:00AM to 10:30AM EST. 
+
+ 
+

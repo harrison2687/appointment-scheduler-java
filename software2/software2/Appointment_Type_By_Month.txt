@@ -1,0 +1,9 @@
+Number of Appointment Types By Month: 
+ 
+2020-01:3
+Types: Accounts-Onboarding, Miscellaneous, Presentation
+ 
+2020-02:1
+Types: Accounts-Offboarding
+ 
+

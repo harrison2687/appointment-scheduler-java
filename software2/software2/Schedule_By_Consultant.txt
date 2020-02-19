@@ -1,0 +1,10 @@
+Upcoming Schedule for Each Consultant: 
+ 
+test: 
+01-28-2020: Type: Accounts-Onboarding, Title: First Meeting from 10:00AM to 11:45AM EST. 
+01-30-2020: Type: Miscellaneous, Title: Follow-up Call from 2:00PM to 4:30PM EST. 
+01-30-2020: Type: Presentation, Title: Sprint Retrospective from 09:00AM to 10:30AM EST. 
+02-11-2020: Type: Accounts-Offboarding, Title: Close Account from 09:00AM to 11:00AM EST. 
+
+ 
+
