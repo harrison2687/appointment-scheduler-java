@@ -1,0 +1,12 @@
+Upcoming Schedule for Each Consultant: 
+ 
+gary: 
+01-16-2020: stuff from 2:00PM to 3:00PM EST. 
+
+ 
+test: 
+02-17-2020: follow up from 08:20AM to 08:40AM EST. 
+01-23-2020: testtesttest from 09:00AM to 10:00AM EST. 
+
+ 
+

@@ -1,0 +1,9 @@
+Number of Appointment Types By Month: 
+ 
+2020-01: 2
+Types: Documentation Discussion, There will be a meeting
+ 
+2020-02: 1
+Types: follow up with test testerson
+ 
+
