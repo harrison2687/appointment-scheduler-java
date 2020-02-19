@@ -2,11 +2,10 @@ package SchedulingApp.Model;
 
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
-
-import java.util.Locale;
-import java.util.ResourceBundle;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 public class Customer {
 
@@ -23,7 +22,11 @@ public class Customer {
     private final IntegerProperty countryId;
     private final StringProperty country;
 
-    // Constructor
+    private static ObservableList<Customer> customerList = FXCollections.observableArrayList();
+
+    /**
+     * main constructor for customer
+     */
     public Customer() {
         customerId = new SimpleIntegerProperty();
         customerName = new SimpleStringProperty();
@@ -39,174 +42,183 @@ public class Customer {
         country = new SimpleStringProperty();
     }
 
-    // Setters
+    /**
+     * ObservableList for customer array
+     */
+    public static ObservableList<Customer> getCustomerList() {
+        return customerList;
+    }
+
+    /**
+     * getters and setters
+     */
+    public int getCustomerId() {
+        return customerId.get();
+    }
+
+    public IntegerProperty customerIdProperty() {
+        return customerId;
+    }
+
     public void setCustomerId(int customerId) {
         this.customerId.set(customerId);
     }
 
-    public void setCustomerName(String customerName) {
-        this.customerName.set(customerName);
-    }
-
-    public void setActive(int active) {
-        this.active.set(active);
-    }
-
-    public void setAddressId(int addressId) {
-        this.addressId.set(addressId);
-    }
-
-    public void setAddress(String address) {
-        this.address.set(address);
-    }
-
-    public void setAddress2(String address2) {
-        this.address2.set(address2);
-    }
-
-    public void setPostalCode(String postalCode) {
-        this.postalCode.set(postalCode);
-    }
-
-    public void setPhone(String phone) {
-        this.phone.set(phone);
-    }
-
-    public void setCityId(int cityId) {
-        this.cityId.set(cityId);
-    }
-
-    public void setCity(String city) {
-        this.city.set(city);
-    }
-
-    public void setCountryId(int countryId) {
-        this.countryId.set(countryId);
-    }
-
-    public void setCountry(String country) {
-        this.country.set(country);
-    }
-
-    // Getters
-    public IntegerProperty customerIdProperty() {
-        return customerId;
+    public String getCustomerName() {
+        return customerName.get();
     }
 
     public StringProperty customerNameProperty() {
         return customerName;
     }
 
-    public IntegerProperty activeProperty() {
-        return active;
-    }
-
-    public IntegerProperty addressIdProperty() {
-        return addressId;
-    }
-
-    public StringProperty addressProperty() {
-        return address;
-    }
-
-    public StringProperty address2Property() {
-        return address2;
-    }
-
-    public StringProperty postalCodeProperty() {
-        return postalCode;
-    }
-
-    public StringProperty phoneProperty() {
-        return phone;
-    }
-
-    public IntegerProperty cityIdProperty() {
-        return cityId;
-    }
-
-    public StringProperty cityProperty() {
-        return city;
-    }
-
-    public IntegerProperty countryIdProperty() {
-        return countryId;
-    }
-
-    public StringProperty countryProperty() {
-        return country;
-    }
-
-    public int getCustomerId() {
-        return this.customerId.get();
-    }
-
-    public String getCustomerName() {
-        return this.customerName.get();
+    public void setCustomerName(String customerName) {
+        this.customerName.set(customerName);
     }
 
     public int getActive() {
         return active.get();
     }
 
+    public IntegerProperty activeProperty() {
+        return active;
+    }
+
+    public void setActive(int active) {
+        this.active.set(active);
+    }
+
     public int getAddressId() {
-        return this.addressId.get();
+        return addressId.get();
+    }
+
+    public IntegerProperty addressIdProperty() {
+        return addressId;
+    }
+
+    public void setAddressId(int addressId) {
+        this.addressId.set(addressId);
     }
 
     public String getAddress() {
-        return this.address.get();
+        return address.get();
+    }
+
+    public StringProperty addressProperty() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address.set(address);
     }
 
     public String getAddress2() {
-        return this.address2.get();
+        return address2.get();
+    }
+
+    public StringProperty address2Property() {
+        return address2;
+    }
+
+    public void setAddress2(String address2) {
+        this.address2.set(address2);
     }
 
     public String getPostalCode() {
-        return this.postalCode.get();
+        return postalCode.get();
+    }
+
+    public StringProperty postalCodeProperty() {
+        return postalCode;
+    }
+
+    public void setPostalCode(String postalCode) {
+        this.postalCode.set(postalCode);
     }
 
     public String getPhone() {
-        return this.phone.get();
+        return phone.get();
+    }
+
+    public StringProperty phoneProperty() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone.set(phone);
     }
 
     public int getCityId() {
-        return this.cityId.get();
+        return cityId.get();
+    }
+
+    public IntegerProperty cityIdProperty() {
+        return cityId;
+    }
+
+    public void setCityId(int cityId) {
+        this.cityId.set(cityId);
     }
 
     public String getCity() {
-        return this.city.get();
+        return city.get();
+    }
+
+    public StringProperty cityProperty() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city.set(city);
     }
 
     public int getCountryId() {
-        return this.countryId.get();
+        return countryId.get();
+    }
+
+    public IntegerProperty countryIdProperty() {
+        return countryId;
+    }
+
+    public void setCountryId(int countryId) {
+        this.countryId.set(countryId);
     }
 
     public String getCountry() {
-        return this.country.get();
+        return country.get();
     }
 
-    // Validation
-    public static String isCustomerValid(String customerName, String address, String city,
-                                         String country, String postalCode, String phone) {
-        ResourceBundle rb = ResourceBundle.getBundle("Customer", Locale.getDefault());
+    public StringProperty countryProperty() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country.set(country);
+    }
+
+    /**
+     * Validation checks for customer operations
+     */
+    public static String customerValid(String customerName, String address, String city, String country,
+                                       String postalCode, String phone) {
         String errorMessage = "";
         if (customerName.length() == 0) {
-            errorMessage = errorMessage + rb.getString("errorCustomerName");
+            errorMessage = "Customer name is required for this record.";
         }
         if (address.length() == 0) {
-            errorMessage = errorMessage + rb.getString("errorAddress");
+            errorMessage = "Please provide a Street Address.";
         }
         if (city.length() == 0) {
-            errorMessage = errorMessage + rb.getString("errorCity");
+            errorMessage = "Please provide a City.";
         }
         if (country.length() == 0) {
-            errorMessage = errorMessage + rb.getString("errorCountry");
+            errorMessage = "Please provide a Country.";
         }
         if (postalCode.length() == 0) {
-            errorMessage = errorMessage + rb.getString("errorPostalCode");
+            errorMessage = "Please provide a Postal Code.";
         }
         if (phone.length() == 0) {
-            errorMessage = errorMessage + rb.getString("errorPhone");
+            errorMessage = "Please provide a valid Phone Number";
         }
         return errorMessage;
     }

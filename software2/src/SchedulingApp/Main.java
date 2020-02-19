@@ -8,19 +8,19 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
+    /**
+     * Starts application and loads the Login screen
+     */
     @Override
     public void start(Stage primaryStage) throws Exception {
-        //Locale.setDefault(new Locale.Builder().setLanguage("fr").build());
-        //TimeZone.setDefault(TimeZone.getTimeZone("PST"));
         primaryStage.setResizable(false);
-        Parent root = FXMLLoader.load(getClass().getResource("ViewController/LogIn.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("ViewController/Login.fxml"));
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
 
-
-    public static void main(String[] args) {
-        launch(args);
-    }
+    /**
+     * launches args
+     */
+    public static void main(String[] args) { launch(args); }
 }
-

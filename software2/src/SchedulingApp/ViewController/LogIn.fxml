@@ -7,18 +7,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SchedulingApp.ViewController.LogInController">
-    <children>
-        <Label fx:id="lblLogInTitle" alignment="CENTER" layoutX="-1.0" layoutY="22.0" prefHeight="53.0" prefWidth="500.0" text="Log In">
-            <font>
-                <Font name="System Bold" size="36.0" />
-            </font>
-        </Label>
-        <TextField fx:id="txtLogInUsername" layoutX="218.0" layoutY="111.0" />
-        <PasswordField fx:id="txtLogInPassword" layoutX="218.0" layoutY="160.0" onAction="#submitLogIn" />
-        <Label fx:id="lblLogInUsername" alignment="CENTER_RIGHT" layoutX="1.0" layoutY="115.0" prefHeight="17.0" prefWidth="180.0" text="Username:" />
-        <Label fx:id="lblLogInPassword" alignment="CENTER_RIGHT" layoutY="164.0" prefHeight="17.0" prefWidth="180.0" text="Password:" />
-        <Button fx:id="btnLogInSubmit" layoutX="218.0" layoutY="246.0" mnemonicParsing="false" onAction="#submitLogIn" text="Submit" />
-        <Label fx:id="lblLogInErrorMessage" alignment="CENTER" layoutY="207.0" prefHeight="21.0" prefWidth="500.0" textAlignment="CENTER" textFill="RED" />
-    </children>
+<AnchorPane prefHeight="280.0" prefWidth="485.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SchedulingApp.ViewController.LoginController">
+   <children>
+      <Label fx:id="lblLoginTitle" layoutX="71.0" layoutY="32.0" text="Appointment Scheduler Log In" textFill="#201ac3">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLoginUsername" layoutX="212.0" layoutY="101.0" prefHeight="27.0" prefWidth="183.0" />
+      <PasswordField fx:id="txtLoginPassword" layoutX="212.0" layoutY="157.0" prefHeight="27.0" prefWidth="183.0" />
+      <Label fx:id="lblLoginUsername" layoutX="86.0" layoutY="106.0" text="Username:" />
+      <Label fx:id="lblLoginPassword" layoutX="87.0" layoutY="162.0" text="Password:" />
+      <Button fx:id="btnLoginSubmit" layoutX="333.0" layoutY="230.0" mnemonicParsing="false" text="Submit" />
+      <Label fx:id="lblLoginErrorMessage" alignment="CENTER" layoutY="194.0" prefHeight="27.0" prefWidth="486.0" textAlignment="CENTER" textFill="darkred" />
+   </children>
 </AnchorPane>
