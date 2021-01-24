@@ -15,7 +15,7 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 import static SchedulingApp.Model.DB.checkLogInCreds;
 
-public class LoginController {
+public class LogInController {
 
     @FXML private Label lblLoginTitle;
     @FXML private Label lblLoginUsername;

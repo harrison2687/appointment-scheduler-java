@@ -22,7 +22,9 @@ import java.util.Date;
 
 public class DB {
 
-    //database information
+    /**
+     * Database connection information
+     */
     private static final String DRIVER = "com.mysql.jdbc.Driver";
     private static final String DB = "U05Ns3";
     private static final String URL = "jdbc:mysql://3.227.166.251/" + DB;

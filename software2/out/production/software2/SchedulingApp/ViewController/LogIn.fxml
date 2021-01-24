@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="280.0" prefWidth="485.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SchedulingApp.ViewController.LoginController">
+<AnchorPane prefHeight="280.0" prefWidth="485.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SchedulingApp.ViewController.LogInController">
    <children>
       <Label fx:id="lblLoginTitle" layoutX="71.0" layoutY="32.0" text="Appointment Scheduler Log In" textFill="#201ac3">
          <font>
